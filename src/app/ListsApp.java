@@ -1,8 +1,6 @@
-package app.Komputer;
+package app;
 
-import app.OOP.User;
 import java.util.ArrayList;
-import app.OOP.SuperUser;
 public class ListsApp {
     private static boolean size;
 

@@ -1,77 +1,66 @@
 package test;
 
+import app.computer.Computer;
+import app.computer.Keyboard;
+import app.computer.Monitor;
+import app.computer.Mousse;
+import app.computer.SystemBlock;
+import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class AppTest {
     
-//    @Test
-//    public void testMonitor() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        
-//        assertEquals("monitor", computer.toString());
-//    }
-//    
-//    @Test
-//    public void testMonitorMouse() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setMousse(new App.Mousse());
-//
-//        assertEquals("monitor"+"mousse", computer.toString());
-//    }
-//    
-//    @Test
-//    public void testMonitorKeyboard() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setKeyboard(new App.Keyboard());
-//
-//        assertEquals("monitorkeyboard", computer.toString());
-//    }
-//
-//    @Test
-//    public void testMonitorSystemBlock() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setSystemBlock(new App.SystemBlock());
-//
-//        assertEquals("monitorsystemBlock", computer.toString());
-//    }
-//    
-//    @Test
-//    public void testMonitorMouseKeyboard() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setMousse(new App.Mousse());
-//        computer.setKeyboard(new App.Keyboard());
-//        assertEquals("monitormoussekeyboard", computer.toString());
-//    }
-//
-//    @Test
-//    public void testMonitorMouseSystemBlock() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setMousse(new App.Mousse());
-//        computer.setSystemBlock(new App.SystemBlock());
-//        assertEquals("monitormoussesystemBlock", computer.toString());
-//    }
-//
-//    @Test
-//    public void testMonitorKeyboardSystemBlock() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setKeyboard(new App.Keyboard());
-//        computer.setSystemBlock(new App.SystemBlock());
-//        assertEquals("monitorkeyboardsystemBlock", computer.toString());
-//    }
-//    @Test
-//    public void testMonitorKeyboardSystemBlockMousse() {
-//        App.Computer computer = new App.Computer();
-//        computer.setMonitor(new App.Monitor());
-//        computer.setKeyboard(new App.Keyboard());
-//        computer.setSystemBlock(new App.SystemBlock());
-//        computer.setMousse(new App.Mousse());
-//        assertEquals("monitormoussekeyboardsystemBlock", computer.toString());
-//    }
+    @Test
+    public void testMonitor() {
+        Computer computer = new Computer("some factory");
+        computer.setMonitor(new Monitor("some factory", 17, "lCD"));
+
+        assertEquals("monitor", computer.toString());
+    }
+    
+    @Test
+    public void testMonitorMouse() {
+        Computer computer = new Computer("some factory");
+        computer.setMonitor(new Monitor("some factory", 17, "lCD"));
+        computer.setMousse(new Mousse("some factory", "RAZR", "fast"));
+
+        assertEquals("monitor"+"mousse", computer.toString());
+    }
+
+    @Test
+    public void testMonitorKeyboard() {
+        Computer computer = new Computer("some factory");
+        computer.setMonitor(new Monitor("some factory", 17, "lCD"));
+        computer.setKeyboard(new Keyboard("some factory 2", "genius", "33"));
+
+        assertEquals("monitorkeyboard", computer.toString());
+    }
+
+    @Test
+    public void testMonitorSystemBlock() {
+        Computer computer = new Computer("some factory");
+        computer.setMonitor(new Monitor("some factory", 17, "lCD"));
+        computer.setSystemBlock(new SystemBlock("IBM"));
+
+        assertEquals("monitorsystemBlock", computer.toString());
+    }
+
+    @Test
+    public void testMonitorMouseKeyboard() {
+        Computer computer = new Computer("some factory");
+        computer.setMonitor(new Monitor("some factory", 17, "lCD"));
+        computer.setMousse(new Mousse("some factory", "RAZR", "fast"));
+        computer.setKeyboard(new Keyboard("some factory 2", "genius", "33"));
+        assertEquals("monitormoussekeyboard", computer.toString());
+    }
+
+    @Test
+    public void testMonitorMouseSystemBlock() {
+        Computer computer = new Computer("some factory");
+        computer.setMonitor(new Monitor("some factory", 17, "lCD"));
+        computer.setMousse(new Mousse("some factory", "RAZR", "fast"));
+        
+        assertEquals("monitormoussesystemBlock", computer.toString());
+    }
 }
