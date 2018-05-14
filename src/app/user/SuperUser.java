@@ -1,4 +1,4 @@
-package app.OOP;
+package app.user;
 
 public class SuperUser extends User {
     @Override

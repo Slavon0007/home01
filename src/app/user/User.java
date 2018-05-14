@@ -1,4 +1,4 @@
-package app.OOP;
+package app.user;
 
 public class User {
     public String name ;

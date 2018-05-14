@@ -1,7 +1,8 @@
 package app.family;
 
-import java.security.PublicKey;
-
+/**
+ * Class for describing member of family. Any human can be a memeber 
+ */
 public class Human {
     private String speak;
     private int height;

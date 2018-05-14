@@ -1,8 +1,8 @@
-package app.OOP;
+package app.user;
 
 import java.util.ArrayList;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
 
         ArrayList<String> listString = new ArrayList<>();
