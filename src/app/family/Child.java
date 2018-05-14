@@ -1,4 +1,4 @@
-package app.Family;
+package app.family;
 
 public class Child extends Human {
     @Override

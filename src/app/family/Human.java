@@ -1,4 +1,4 @@
-package app.Family;
+package app.family;
 
 import java.security.PublicKey;
 
