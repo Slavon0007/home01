@@ -1,7 +1,7 @@
 package app.family;
 
 /**
- * Class for describing member of family. Any human can be a memeber 
+ * Class for describing member of family. Any human can be a member
  */
 public class Human {
     private String speak;
@@ -34,9 +34,33 @@ public class Human {
 
     public void setHeight(int height) {
         this.height = height;
+        if ( sleep == true ){
+            height ++;
+        }
     }
 
     public void setWeight(int weight) {
         this.weight = weight;
+        if(eat == true){
+            weight ++;
+        }
     }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getRankInTheFamily() {
+        return rankInTheFamily;
+    }
+
+    public String getSpeak() {
+        return speak;
+    }
+
+    public boolean getEat() { return eat;}
 }

@@ -1,6 +1,7 @@
 package app;
 
 import java.util.ArrayList;
+
 public class ListsApp {
     private static boolean size;
 
@@ -26,18 +27,22 @@ public class ListsApp {
     public void homeArrey(int[] arrey) {
         int min = 0;
         int max = 0;
-        int midle = 0;
-        int summ = 0;
+        int middle = 0;
+        int sum = 0;
+
         for (int i = 0; i > arrey.length; i++) {
-            summ = summ + arrey.length;
+            sum = sum + arrey[i];
+
             if (arrey[i] < min) {
                 arrey[i] = min;
             }
+
             if (arrey[i] > max) {
                 arrey[i] = max;
             }
+
             if (arrey[i] < max && arrey[i] > min) {
-                arrey[i] = midle;
+                arrey[i] = middle;
             }
         }
     }
