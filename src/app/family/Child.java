@@ -43,6 +43,12 @@ public class Child extends Human {
         this.setWalk(false);
     }
 
+    public void game(boolean game){
+        if( game == true){
+            setEat(getEat()==false);
+        }
+    }
+
     @Override
     public String toString(){
 

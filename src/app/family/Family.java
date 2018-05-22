@@ -25,7 +25,7 @@ public class Family extends Human {
 
     @Override
     public String toString() {
-        return "";
+        return ""+getRankInTheFamily();
     }
 
 }

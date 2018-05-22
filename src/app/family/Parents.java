@@ -25,4 +25,14 @@ public  class  Parents extends Human {
     public void setSleep(boolean sleep) {
         this.setSleep(false);
     }
+
+    @Override
+    public String toString() {
+
+        return getRankInTheFamily()+","+getSpeak()+","+getWeight();
+    }
+    public void work(String Work){
+        Work = "i am a work";
+
+    }
 }
