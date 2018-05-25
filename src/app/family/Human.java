@@ -4,8 +4,8 @@ package app.family;
  * Class for describing member of family. Any human can be a member
  */
 public class Human {
-    private String speak;
-    private int height;
+    protected String speak;
+    protected int height;
     private int weight;
     private String rankInTheFamily;
     private boolean sleep;

@@ -2,6 +2,9 @@ package app.family;
 
 public class Family extends Human {
 
+    public String mama(){
+        return "mamam";
+    }
     @Override
     public void setEat(boolean eat) {
         super.setEat(eat);
@@ -25,7 +28,7 @@ public class Family extends Human {
 
     @Override
     public String toString() {
-        return ""+getRankInTheFamily();
+        return ""+mama();
     }
 
 }

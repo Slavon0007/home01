@@ -22,12 +22,12 @@ public class Child extends Human {
 
     @Override
     public void setHeight(int height) {
-        this.setHeight(123);
+        super.setHeight(123);
     }
 
     @Override
-    public void setSpeak(String speak) {
-        this.setSpeak(speak);
+    public void setSpeak(String speak1) {
+        super.setSpeak("I sm child");
     }
 
     @Override
