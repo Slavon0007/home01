@@ -1,4 +1,7 @@
-package app.family02;
+package app;
+
+import app.family02.Family3;
+import app.family02.Member;
 
 public class Main3 {
 
@@ -7,13 +10,16 @@ public class Main3 {
 
         Member papa = new Member("papa");
         Member grandmather = new Member("grandmather");
+        Member mama = new Member("mama");
 
         family3.addMemeber(papa);
         family3.addMemeber(grandmather);
+        family3.addMemeber(mama);
 
         family3.walk(true);
         family3.sleep(true);
         family3.eat(false);
+        family3.separations(";");
 
         System.out.println(family3.toString());
     }

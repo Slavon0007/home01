@@ -5,6 +5,7 @@ public class Human {
     protected boolean walk;
     protected boolean eat;
 
+
     public void setEat(boolean eat) {
         this.eat = eat;
     }
@@ -16,6 +17,8 @@ public class Human {
     public void setWalk(boolean walk) {
         this.walk = walk;
     }
+
+
 
     public boolean getEat() {
         return eat;

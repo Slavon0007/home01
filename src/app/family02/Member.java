@@ -8,6 +8,6 @@ public class Member extends Human {
     }
 
     public String toString(){
-        return typeOfMember + ":" + super.toString();
+        return typeOfMember + ":" + super.toString()+";";
     }
 }
