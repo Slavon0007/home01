@@ -6,6 +6,9 @@ import app.computer.Keyboard;
 import app.computer.Monitor;
 import app.computer.Mousse;
 import app.computer.SystemBlock;
+import app.family02.Family2;
+import app.family02.Family3;
+import app.family02.Member;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -72,5 +75,29 @@ public class AppTest {
         listsApp.homeArrey(arrey);
 
         assertEquals("error",2,4);
+    }
+    @Test
+    public  void testFamily2(){
+        Family2 family2 = new Family2();
+        family2.eat(true);
+        family2.sleep(false);
+        family2.walk(false);
+
+        assertEquals("family ,eat true,sleep false,walk false",family2.toString());
+    }
+    @Test
+    public  void testFamily3(){
+        Family3 family3 = new Family3();
+        Member papa = new Member("papa");
+        Member mama = new Member("mama");
+
+        family3.addMemeber(papa);
+        family3.addMemeber(mama);
+
+        family3.eat(true);
+        family3.sleep(false);
+        family3.walk(false);
+
+        assertEquals("papa = eat:true;sleep:falsa;walk:false mama = eat:true;sleep:falsse;walk:false",family3.toString());
     }
 }

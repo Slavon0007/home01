@@ -24,7 +24,7 @@ public class ListsApp {
         }
     }
 
-    public void homeArrey(int[] arrey) {
+    public void homeArrey(int[] arrey)  {
         int min = 0;
         int max = 0;
         int middle = 0;
@@ -45,6 +45,9 @@ public class ListsApp {
                 arrey[i] = middle;
             }
         }
+
+        //средние арефмитическое
+        sum=sum/arrey.length;
     }
 
     public static void printStringsThatStartWith2(ArrayList<String> list, int max) {

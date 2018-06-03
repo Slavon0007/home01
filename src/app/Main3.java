@@ -19,7 +19,7 @@ public class Main3 {
         family3.walk(true);
         family3.sleep(true);
         family3.eat(false);
-        family3.separations(";");
+
 
         System.out.println(family3.toString());
     }
